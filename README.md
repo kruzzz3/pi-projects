@@ -93,6 +93,15 @@ PW: as defined
 
 # Tips
 
+## Default User & Password on Raspberry
+```
+User: pi
+Password: raspberry
+```
+
+## GPIO
+![alt GPIO Board](https://www.raspberrypi.org/documentation/usage/gpio/images/gpio-numbers-pi2.png)
+
 ## GET IP
 ```
 hostname -I
@@ -102,6 +111,7 @@ hostname -I
 # Setup minimal webserver
 
 ## NGINX
+* Documentation
 ```
 https://www.raspberrypi.org/documentation/remote-access/web-server/nginx.md
 ```
@@ -111,7 +121,7 @@ https://www.raspberrypi.org/documentation/remote-access/web-server/nginx.md
 sudo apt-get install nginx
 ```
 
-* Start Nginx
+* Start NGINX
 ```
 sudo /etc/init.d/nginx start
 ```
@@ -121,7 +131,7 @@ sudo /etc/init.d/nginx start
 sudo sed -i -e '$i \/etc/init.d/nginx start\n' /etc/rc.local
 ```
 
-* Nginx servers files from /var/www/html
+* NGINX serves files from /var/www/html
 
 
 
