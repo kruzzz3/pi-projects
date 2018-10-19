@@ -1,4 +1,4 @@
-# Inital Raspberry Config:
+# Initial Raspberry Config:
 
 ## SSH-KEY
  * Create SSH-Key
@@ -99,10 +99,14 @@ hostname -I
 ```
 
 
-# Setup minimal Webserver
+# Setup minimal webserver
 
 ## NGINX
-* Install Nginx
+```
+https://www.raspberrypi.org/documentation/remote-access/web-server/nginx.md
+```
+
+* Install NGINX
 ```
 sudo apt-get install nginx
 ```
@@ -110,6 +114,11 @@ sudo apt-get install nginx
 * Start Nginx
 ```
 sudo /etc/init.d/nginx start
+```
+
+* Autostart NGINX on startup
+```
+sudo sed -i -e '$i \/etc/init.d/nginx start\n' /etc/rc.local
 ```
 
 * Nginx servers files from /var/www/html
