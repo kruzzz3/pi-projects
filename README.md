@@ -1,4 +1,4 @@
-# Config:
+# Inital Raspberry Config:
 
 ## SSH-KEY
  * Create SSH-Key
@@ -11,15 +11,15 @@ ssh-keygen -t rsa -b 4096
 cat /home/pi/.ssh/id_rsa.pub
 ```
 
-## VI
- * Edit file .vimrc
+## VIM Config
+ * Edit file /home/pi/.vimrc
 ```
 set nocp
 set backspace=indent,eol,start
 ```
 
-## GIT
- * Edit file .gitconfig
+## GIT (Optinal)
+ * Edit file /home/pi/.gitconfig
 ```
 [alias]
 co = checkout
@@ -83,12 +83,45 @@ sudo smbpasswd -a pi
 sudo /etc/init.d/samba restart
 ```
 
-* Connect to Net Drive
+* Mount Samba Drive
 ```
 smb://192.X.X.X
 User: pi
 PW: as defined
 ```
+
+
+# Tips
+
+## GET IP
+```
+hostname -I
+```
+
+
+# Setup minimal Webserver
+
+## NGINX
+* Install Nginx
+```
+sudo apt-get install nginx
+```
+
+* Start Nginx
+```
+sudo /etc/init.d/nginx start
+```
+
+* Nginx servers files from /var/www/html
+
+
+
+
+
+
+
+
+
 
 
 #### Check installation:  
