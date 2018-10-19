@@ -100,7 +100,8 @@ Password: raspberry
 ```
 
 ## GPIO
-![alt GPIO Board](https://www.raspberrypi.org/documentation/usage/gpio/images/gpio-numbers-pi2.png)
+![alt GPIO Pins](https://raw.githubusercontent.com/username/projectname/branch/path/to/img.png)
+![alt GPIO Pins](https://raw.githubusercontent.com/kruzzz3/pi-projects/master/img/gpio-numbers-pi2.png)
 
 ## GET IP
 ```
@@ -132,6 +133,26 @@ sudo sed -i -e '$i \/etc/init.d/nginx start\n' /etc/rc.local
 ```
 
 * NGINX serves files from /var/www/html
+
+
+# PYTHON
+
+## General
+* Install Python & pip
+```
+sudo apt-get install python-dev
+sudo apt-get install python-pip
+```
+
+## GPIO
+* Install Libs
+```
+sudo pip install RPi.GPIO
+```
+
+
+
+
 
 
 
